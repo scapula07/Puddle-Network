@@ -1,0 +1,486 @@
+[
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_minFee",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "_ipAddress",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_feeCut",
+				"type": "uint256"
+			}
+		],
+		"name": "addStorage",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_minFee",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "_ipAddress",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_feeCut",
+				"type": "uint256"
+			}
+		],
+		"name": "addTranscoder",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_amount",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "_addressOfNode",
+				"type": "address"
+			}
+		],
+		"name": "stakeWithNode",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bool",
+				"name": "_status",
+				"type": "bool"
+			}
+		],
+		"name": "updateStorageStatus",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bool",
+				"name": "_status",
+				"type": "bool"
+			}
+		],
+		"name": "updateTranscoderStatus",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_minCut",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_feeCut",
+				"type": "uint256"
+			}
+		],
+		"name": "withDrawstake",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"name": "ActiveStorage",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "owner",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "minfee",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "ipAddress",
+				"type": "string"
+			},
+			{
+				"internalType": "bool",
+				"name": "status",
+				"type": "bool"
+			},
+			{
+				"internalType": "uint256",
+				"name": "feeCut",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "cumulativeFeeCut",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "activetranscoderAddresses",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"name": "ActiveTranscoders",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "owner",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "minfee",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "ipAddress",
+				"type": "string"
+			},
+			{
+				"internalType": "bool",
+				"name": "status",
+				"type": "bool"
+			},
+			{
+				"internalType": "uint256",
+				"name": "feeCut",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "cumulativeFeeCut",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "index",
+				"type": "uint256"
+			}
+		],
+		"name": "getActiveTranscoderAddressAtIndex",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "getAllActiveTranscoders",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "minfee",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "ipAddress",
+						"type": "string"
+					},
+					{
+						"internalType": "bool",
+						"name": "status",
+						"type": "bool"
+					},
+					{
+						"internalType": "uint256",
+						"name": "feeCut",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "cumulativeFeeCut",
+						"type": "uint256"
+					}
+				],
+				"internalType": "struct Controller.Transcoder[]",
+				"name": "",
+				"type": "tuple[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "getAllTranscoders",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "minfee",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "ipAddress",
+						"type": "string"
+					},
+					{
+						"internalType": "bool",
+						"name": "status",
+						"type": "bool"
+					},
+					{
+						"internalType": "uint256",
+						"name": "feeCut",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "cumulativeFeeCut",
+						"type": "uint256"
+					}
+				],
+				"internalType": "struct Controller.Transcoder[]",
+				"name": "",
+				"type": "tuple[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "index",
+				"type": "uint256"
+			}
+		],
+		"name": "getTranscoderAddressAtIndex",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"name": "Stakers",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "staker",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "amount",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "addressOfNode",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "reward",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"name": "Storages",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "owner",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "minfee",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "ipAddress",
+				"type": "string"
+			},
+			{
+				"internalType": "bool",
+				"name": "status",
+				"type": "bool"
+			},
+			{
+				"internalType": "uint256",
+				"name": "feeCut",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "cumulativeFeeCut",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "transcoderAddresses",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"name": "Transcoders",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "owner",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "minfee",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "ipAddress",
+				"type": "string"
+			},
+			{
+				"internalType": "bool",
+				"name": "status",
+				"type": "bool"
+			},
+			{
+				"internalType": "uint256",
+				"name": "feeCut",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "cumulativeFeeCut",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	}
+]

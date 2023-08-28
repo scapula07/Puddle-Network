@@ -1,0 +1,17 @@
+{
+  "name": "podsrtmpserver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-media-server": "^2.6.2",
+    "nodemon": "^2.0.22"
+  }
+}
